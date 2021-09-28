@@ -12,6 +12,4 @@ steps:
       - 'run'
       - 'semantic-release'
       - '--'
-      - '--repositoryUrl'
-      - '"git@github.com:jeerryy/semantic-release-test.git"'
       - '--no-ci'
