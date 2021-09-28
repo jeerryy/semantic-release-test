@@ -82,6 +82,5 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/jeerryy/semantic-release-test.git"
-  },
-  "private": true
+  }
 }
