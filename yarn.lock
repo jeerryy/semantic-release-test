@@ -789,6 +789,11 @@
     "lodash" "^4.17.4"
     "micromatch" "^4.0.2"
 
+"@semantic-release/error@^2.1.0":
+  "integrity" "sha512-9Tj/qn+y2j+sjCI3Jd+qseGtHjOAeg7dU2/lVcqIQ9TV3QDaDXDYXcoOHU+7o2Hwh8L8ymL4gfuO7KxDs3q2zg=="
+  "resolved" "https://registry.npmjs.org/@semantic-release/error/-/error-2.2.0.tgz"
+  "version" "2.2.0"
+
 "@semantic-release/error@^2.2.0":
   "integrity" "sha512-9Tj/qn+y2j+sjCI3Jd+qseGtHjOAeg7dU2/lVcqIQ9TV3QDaDXDYXcoOHU+7o2Hwh8L8ymL4gfuO7KxDs3q2zg=="
   "resolved" "https://registry.npmjs.org/@semantic-release/error/-/error-2.2.0.tgz"
@@ -798,6 +803,18 @@
   "integrity" "sha512-5hiM4Un+tpl4cKw3lV4UgzJj+SmfNIDCLLw0TepzQxz9ZGV5ixnqkzIVF+3tp0ZHgcMKE+VNGHJjEeyFG2dcSw=="
   "resolved" "https://registry.npmjs.org/@semantic-release/error/-/error-3.0.0.tgz"
   "version" "3.0.0"
+
+"@semantic-release/exec@^6.0.1":
+  "integrity" "sha512-RlMoxuhQ7QujrykIG5uw0NU6x82BR4E7ssKsl+ISCFhFHnvxxH+w4h4klWOs/cT/XEPJdoPFbBOVoruKtAwfDg=="
+  "resolved" "https://registry.npmjs.org/@semantic-release/exec/-/exec-6.0.1.tgz"
+  "version" "6.0.1"
+  dependencies:
+    "@semantic-release/error" "^2.1.0"
+    "aggregate-error" "^3.0.0"
+    "debug" "^4.0.0"
+    "execa" "^5.0.0"
+    "lodash" "^4.17.4"
+    "parse-json" "^5.0.0"
 
 "@semantic-release/github@^8.0.0":
   "integrity" "sha512-T01lfh4yBZodAeo8t0U+W5hmPYR9BdnfwLDerXnGaYeLXm8+KMx4mQEBAf/UbRVlzmIKTqMx+/s9fY/mSQNV0A=="
@@ -1470,6 +1487,8 @@
     "color-convert" "^2.0.1"
 
 "ansicolors@*":
+  "integrity" "sha1-ZlWX3oap/+Oqm/vmyuXG6kJrSXk="
+  "resolved" "https://registry.npmjs.org/ansicolors/-/ansicolors-0.3.2.tgz"
   "version" "0.3.2"
 
 "ansicolors@~0.3.2":
@@ -2349,6 +2368,8 @@
   "version" "2.2.0"
 
 "cli-table3@*":
+  "integrity" "sha512-gnB85c3MGC7Nm9I/FkiasNBOKjOiO1RNuXXarQms37q4QMpWdlbBgD/VnOStA2faG1dpXMv31RFApjX1/QdgWQ=="
+  "resolved" "https://registry.npmjs.org/cli-table3/-/cli-table3-0.6.0.tgz"
   "version" "0.6.0"
   dependencies:
     "object-assign" "^4.1.0"
@@ -7999,7 +8020,7 @@
     "ajv-errors" "^1.0.0"
     "ajv-keywords" "^3.1.0"
 
-"semantic-release@^18.0.0", "semantic-release@>=18.0.0-beta.1":
+"semantic-release@^18.0.0", "semantic-release@>=18.0.0", "semantic-release@>=18.0.0-beta.1":
   "integrity" "sha512-/Szyhq5DTZCYry/aZqpBbK/kqv10ydn6oiiaYOXtPgDbAIkqidZcQOm+mfYFJ0sBTUaOYCKMlcPMgJycP7jDYQ=="
   "resolved" "https://registry.npmjs.org/semantic-release/-/semantic-release-18.0.0.tgz"
   "version" "18.0.0"
