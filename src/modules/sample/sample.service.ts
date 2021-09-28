@@ -20,7 +20,7 @@ export class SampleService {
 
   hello() {
     this.logger.debug(`sample service works`);
-    console.log('test');
+    console.log('test!!!');
     return 'world';
   }
 
