@@ -3,7 +3,6 @@
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
     ["@semantic-release/npm",{
-      // npm publish 안되게 적용
       "npmPublish": false,
     }],
     "@semantic-release/github",
