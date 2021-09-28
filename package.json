@@ -1,6 +1,6 @@
 {
-  "name": "api",
-  "version": "0.0.1",
+  "name": "jeerryy-semantic-release-test",
+  "version": "0.0.0-development",
   "description": "",
   "author": "",
   "license": "MIT",
@@ -18,7 +18,8 @@
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
     "test:e2e": "jest --config ./test/jest-e2e.json",
-    "make:schema": "ts-node src/graphql/schema.generator.ts"
+    "make:schema": "ts-node src/graphql/schema.generator.ts",
+    "semantic-release": "semantic-release"
   },
   "dependencies": {
     "@nestjs/common": "^7.0.5",
@@ -55,7 +56,8 @@
     "ts-loader": "^6.2.2",
     "ts-node": "^8.8.1",
     "tsconfig-paths": "^3.9.0",
-    "typescript": "^3.7.4"
+    "typescript": "^3.7.4",
+    "semantic-release": "^18.0.0"
   },
   "jest": {
     "moduleFileExtensions": [
@@ -76,5 +78,9 @@
     "roots": [
       "<rootDir>/src/"
     ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jeerryy/semantic-release-test.git"
   }
 }
