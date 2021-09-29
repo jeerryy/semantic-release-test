@@ -12,6 +12,7 @@ export class SampleService {
    * TODO master/slave 구조일 때 아래의 경우 master 를 사용합니다. master / slave 를 선택적으로 사용하려면 queryRunner 를 활용해야합니다.
    * this.connection.createQueryRunner('slave');
    * @param connection
+   * @param rawQuery
    */
   constructor(
     @InjectConnection() private readonly connection: Connection,
@@ -20,6 +21,7 @@ export class SampleService {
 
   hello() {
     this.logger.debug(`sample service works`);
+    console.log('test');
     return 'world';
   }
 
