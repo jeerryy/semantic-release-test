@@ -23,7 +23,7 @@ COPY ./src ./src
 RUN yarn build
 
 # 실행 이미지입니다.
-FROM node:12-alpine
+FROM node:14.17
 
 # NODE_ENV 환경변수를 build 시에 설정할 수 있도록 합니다. 기본값은 development 입니다.
 ARG NODE_ENV=development
