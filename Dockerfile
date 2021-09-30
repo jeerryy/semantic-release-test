@@ -1,5 +1,5 @@
 # build stage
-FROM node:14.17 as builder
+FROM node:14.18-alpine as builder
 
 # 이 option 에 의해 graphql console 을 사용여부가 결정됩니다.
 ENV NODE_ENV=development
@@ -23,7 +23,7 @@ COPY ./src ./src
 RUN yarn build
 
 # 실행 이미지입니다.
-FROM node:14.17
+FROM node:14.18-alpine
 
 # NODE_ENV 환경변수를 build 시에 설정할 수 있도록 합니다. 기본값은 development 입니다.
 ARG NODE_ENV=development
