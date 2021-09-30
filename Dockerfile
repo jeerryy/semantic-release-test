@@ -1,5 +1,5 @@
 # build stage
-FROM node:12-alpine as builder
+FROM node:14.17 as builder
 
 # 이 option 에 의해 graphql console 을 사용여부가 결정됩니다.
 ENV NODE_ENV=development
