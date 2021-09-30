@@ -19,9 +19,6 @@ COPY ./tsconfig.json ./tsconfig.build.json ./nest-cli.json ./
 # source code 복사
 COPY ./src ./src
 
-# library
-COPY ./libs ./libs
-
 # source code build
 RUN yarn build
 
