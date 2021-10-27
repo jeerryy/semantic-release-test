@@ -2,7 +2,7 @@ steps:
   - name: node:$_NODE_VERSION
     entrypoint: npm
     args:
-      - 'install'
+      - 'install semantic-release @semantic-release/git @semantic-release/npm'
   - name: node:$_NODE_VERSION
     env:
       - 'GITHUB_TOKEN=$_GH_TOKEN'

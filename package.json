@@ -19,7 +19,9 @@
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
     "test:e2e": "jest --config ./test/jest-e2e.json",
     "make:schema": "ts-node src/graphql/schema.generator.ts",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "prepare": "husky install",
+    "cm": "cz"
   },
   "dependencies": {
     "@nestjs/common": "^7.0.5",
@@ -37,6 +39,8 @@
     "typeorm": "^0.2.24"
   },
   "devDependencies": {
+    "@commitlint/cli": "^13.2.1",
+    "@commitlint/config-conventional": "^13.2.0",
     "@nestjs/cli": "^7.0.2",
     "@nestjs/schematics": "^7.0.0",
     "@nestjs/testing": "^7.0.5",
@@ -48,9 +52,12 @@
     "@types/supertest": "^2.0.8",
     "@typescript-eslint/eslint-plugin": "^2.24.0",
     "@typescript-eslint/parser": "^2.24.0",
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^6.7.2",
     "eslint-config-prettier": "^6.10.1",
     "eslint-plugin-import": "^2.19.1",
+    "husky": "^7.0.0",
     "jest": "^25.1.0",
     "prettier": "^2.0.1",
     "semantic-release": "^18.0.0",
@@ -84,5 +91,10 @@
   "repository": {
     "type": "git",
     "url": "git@github.com:jeerryy/semantic-release-test.git"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
